@@ -1,8 +1,8 @@
 stages:
-  -build
+  - build
 
 build-java-project:
-  stage:build
+  stage: build
   script: mvn package
   artifacts:
     paths:
