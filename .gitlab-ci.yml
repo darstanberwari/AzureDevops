@@ -3,7 +3,5 @@ stages:
 
 build-java-project:
   stage: build
-  script: mvn package
-  artifacts:
-    paths:
-      - /etc/gitlab-runner/
+  script: mvn clean install
+
