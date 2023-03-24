@@ -1,0 +1,25 @@
+stages:
+ - build
+ - deploy
+
+build_app:
+    stage: build
+    script:
+        - mvn clean install
+        - mvn deploy
+    environment:
+        name: maven-snapshots
+        url: http://localhost:8081/repository/maven-snapshots/
+
+
+deploy_app:
+  stage: deploy
+  script:
+    - mvn release:clean
+    - mvn release:prepare
+    - mvn release:perform
+  environment:
+    name: maven-releases
+    url: http://localhost:8081/repository/maven-releases/
+  only:
+    - main
