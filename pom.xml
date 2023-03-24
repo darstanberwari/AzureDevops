@@ -6,9 +6,9 @@
     <version>6.8-SNAPSHOT</version>
 
     <scm>
-        <connection>scm:git:http://localhost/gitlab/root/gitlab_ci_challenge</connection>
-        <developerConnection>scm:git:http://localhost/gitlab/root/gitlab_ci_challenge</developerConnection>
-        <url>http://localhost/gitlab/root/gitlab_ci_challenge</url>
+        <connection>scm:git:https://gitlab.com/gitlab_challenge/nexus</connection>
+        <developerConnection>scm:git:https://gitlab.com/gitlab_challenge/nexus</developerConnection>
+        <url>https://gitlab.com/gitlab_challenge/nexus</url>
   </scm>
 
 
