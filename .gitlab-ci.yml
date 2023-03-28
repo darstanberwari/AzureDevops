@@ -7,9 +7,6 @@ build_app:
     script:
         - mvn clean install
         - mvn deploy
-        - git add .
-        - git commit -m "2023"
-        - git push origin main
     environment:
         name: maven-snapshots
         url: http://localhost:8081/repository/maven-snapshots/
